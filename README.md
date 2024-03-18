@@ -23,7 +23,7 @@ int main(){
 * `enter value of z=21`
 * `total avg=32`
 
- ## write a user base program based arthimatics operations
+ ## write a user base program based arthimatics operations (02)
  ```
 #include <iostream>
 using namespace std;
