@@ -83,7 +83,7 @@ int main() {
     cin >> y;
 
     cout << "Before swapping: x = " << x << ", y = "<< y << "\n";
-     int a=x;
+    a=x;
     x=y;
     y=a;
     cout << "after swapping: x = " << x << ", y = "<< y;
