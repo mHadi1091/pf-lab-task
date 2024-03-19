@@ -95,3 +95,16 @@ int main() {
 * Before swapping: x = 5, y = 6
 * after swapping: x = 6, y = 5
 ```
+# make a program to convert temperature from celsius to fahrenheit the user should input the temperature in celsius (05)
+```
+#include <iostream>
+using namespace std;
+int main() {
+float celsius, fahrenheit;
+    cout << "Enter the temperature in Celsius: ";
+    cin >> celsius;
+    fahrenheit = (celsius * 9/5) + 32;
+    cout << "temperature in fahrenhait:" <<fahrenheit;
+    return 0;
+}
+```
