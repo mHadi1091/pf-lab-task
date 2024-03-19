@@ -71,3 +71,27 @@ int main() {
 * enter radius=25.3
 * area of radius=2010.9
 ```
+# create a program that swaps the value of two variables. take the input of two numbers from the user and then swap their values (04)
+```
+#include <iostream>
+using namespace std;
+int main() {
+    int x, y;
+    cout << "Enter the value of x: ";
+    cin >> x;
+    cout << "Enter the value of y: ";
+    cin >> y;
+
+    cout << "Before swapping: x = " << x << ", y = "<< y << "\n";
+     int a=x;
+    x=y;
+    y=a;
+    cout << "after swapping: x = " << x << ", y = "<< y;
+    return 0;
+}
+* OUTPUT
+* Enter the value of x: 5
+* Enter the value of y: 6
+* Before swapping: x = 5, y = 6
+* after swapping: x = 6, y = 5
+```
