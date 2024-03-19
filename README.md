@@ -45,7 +45,6 @@ int main(){
     cout<<"division="<<d<<"\n";
     return 0;
 }
-```
 * `OUTPUT`
 * `enter value of x=45`
 * `enter value of y=13`
@@ -54,4 +53,19 @@ int main(){
 * `submission=32`
 * `multiple=585`
 * `division=3`
+```
+
+# write a program that takes the radius of cricle from user and print its area
+```
+#include <iostream>
+using namespace std;
+int main() {
+  float pi=3.14159,r,area=0;
+  cout<<"enter radius=";
+  cin>>r;
+  area=pi*r*r;
+  cout<<"area of radius="<<area;
+    return 0;
+}
+```
 
