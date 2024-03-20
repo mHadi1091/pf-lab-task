@@ -109,3 +109,25 @@ float celsius, fahrenheit;
 }
 ```
 # make a program which takes users age & tells them wether user is a child or teen (06)
+```
+#include <iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"enter your age:";
+cin>>x;
+if (x>=14){
+    cout<<"your a teen!"<<endl;
+}
+    else if (x<14)
+    cout<<"your a chlid!"<<endl;
+
+    return 0;
+}
+* OUTUPUT ( if user is a teen >14 )
+- enter your age:15
+- your a teen!
+* OUTPUT ( if user is a child <14 )
+- enter your age:9
+- your a chlid!
+```
