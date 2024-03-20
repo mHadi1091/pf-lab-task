@@ -108,3 +108,4 @@ float celsius, fahrenheit;
     return 0;
 }
 ```
+# make a program which takes users age & tells them wether user is a child or teen (06)
