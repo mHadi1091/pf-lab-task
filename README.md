@@ -1,6 +1,6 @@
 # pf-lab-task
 prgramming fundamentals lab work &amp; activity
-## make a user based program and print the avg of the given values (01)
+# make a user based program and print the avg of the given values (01)
 ```
 #include <iostream>
 using namespace std;
@@ -23,7 +23,7 @@ int main(){
 * `total avg=32`
 ```
 
- ## write a user base program based on arthimatics operations (02)
+ # write a user base program based on arthimatics operations (02)
  ```
 #include <iostream>
 using namespace std;
