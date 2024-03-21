@@ -131,23 +131,7 @@ if (x>=14){
 - enter your age:9
 - your a chlid!
 ```
-# make a program which tells the area of a radius given by the user (07)
-```
-#include <iostream>
-using namespace std;
-int main() {
- float pi=3.17,r,area=0;
- cout<<"enter your radius=";
- cin>>r;
- area=pi*r*r;
- cout<<"your area of given radius="<<area;
-    return 0;
-}
-* OUTPUT
-- enter your radius=5.3
-- your area of given radius=89.0453
-```
-# make a program that takes to values from the user and swap them with eachother (08)
+# make a program that takes to values from the user and swap them with eachother (07)
 ```
 #include <iostream>
 using namespace std;
