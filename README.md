@@ -147,3 +147,25 @@ int main() {
 - enter your radius=5.3
 - your area of given radius=89.0453
 ```
+# make a program that takes to values from the user and swap them with eachother (08)
+```
+#include <iostream>
+using namespace std;
+int main() {
+int x,y,a;
+cout<<"enter the value of x:";
+cin>>x;
+cout<<"enter the value of y:";
+cin>>y;
+cout<<"before swappping; x="<<x<<", y= "<<y<<"\n";
+a=x;
+x=y;
+y=a;
+cout<<"after swapping; x="<<x<<", y= "<<y<<"\n";
+    return 0;
+}
+* OUTPUT
+- enter the value of x:56
+- enter the value of y:22
+- before swappping; x=56, y= 22
+- after swapping; x=22, y= 56
