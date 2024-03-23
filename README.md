@@ -153,5 +153,23 @@ cout<<"after swapping; x="<<x<<", y= "<<y<<"\n";
 - enter the value of y:22
 - before swappping; x=56, y= 22
 - after swapping; x=22, y= 56
+```
+# swap the values of 2 int by using only 2 variables (08)
+```
+#include <iostream>
+using namespace std;
+int main() {
+int a=10;
+int b=20;
+cout<<"before swapping a="<<a<<" ,b="<<b<<"\n";
+a=10+20;
+b=20-10;
+a=30-10;
+cout<<"after swapping a="<<a<<" ,b="<<b<<"\n";
+    return 0;
+}
+* OUTPUT
+- before swapping a=10 ,b=20
+- after swapping a=20 ,b=10
+```
 
-#
