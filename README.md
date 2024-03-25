@@ -172,4 +172,26 @@ cout<<"after swapping a="<<a<<" ,b="<<b<<"\n";
 - before swapping a=10 ,b=20
 - after swapping a=20 ,b=10
 ```
-
+# calculator (09)
+```
+#include <iostream>
+using namespace std;
+int main(){
+    int num1 , num2 ;
+    char keys;
+    cout<<"enter your 1st value:";
+    cin>>num1;
+    cout<<"enter your 2nd value:";
+    cin>>num2;
+    cout<<"enter your operation:";
+    cin>>keys;
+    switch (keys){
+        case '+': cout<<"answer:"<<(num1+num2); break;
+        case '-': cout<<"answer:"<<(num1-num2); break;
+        case '*': cout<<"answer:"<<(num1*num2); break;
+        case '/': cout<<"answer:"<<(num1/num2); break;
+        default : cout<<"invalid operation!!"; break;
+    }
+  return 0;
+}
+```
