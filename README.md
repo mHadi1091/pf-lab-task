@@ -212,7 +212,7 @@ cout<<"day:"<<day<<"hour:"<<hour<<"mint:"<<mint<<"sec:"<<seconds;
 return 0;
 }
 ```
-# make s program that ask for year as an input and tells weather the year is a leap year or not (11)
+# make s program that ask for year as an input and tells whather the year is a leap year or not (11)
 ```
 #include <iostream>
 using namespace std;
