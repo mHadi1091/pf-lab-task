@@ -195,3 +195,4 @@ int main(){
   return 0;
 }
 ```
+# make a program that calculates the BMI of a person (body mass index) (10)
