@@ -195,4 +195,20 @@ int main(){
   return 0;
 }
 ```
-# make a program that calculates the BMI of a person (body mass index) (10)
+# make a program that ask input in seconds and converts the number into days hour mints and sec value (10)
+```
+#include <iostream>
+using namespace std;
+int main(){
+int sec,hour,day,mint;
+int seconds=0;
+cout<<"enter your value in seconds:";
+cin>>sec;
+day= sec/ (24 * 3600);
+hour= (sec% (24 * 3600)) / 3600;
+mint= sec % (24 * 3600) / 60;
+seconds= (sec % (24 * 3600)) % 60;
+cout<<"day:"<<day<<"hour:"<<hour<<"mint:"<<mint<<"sec:"<<seconds;
+return 0;
+}
+```
