@@ -212,7 +212,7 @@ cout<<"day:"<<day<<"hour:"<<hour<<"mint:"<<mint<<"sec:"<<seconds;
 return 0;
 }
 ```
-# make s program that ask for year as an input and tells whather the year is a leap year or not (11)
+# make a program that ask for year as an input and tells whather the year is a leap year or not (11)
 ```
 #include <iostream>
 using namespace std;
@@ -224,6 +224,28 @@ if ((year%4==0) && (year%100!=0))
     cout<<"ur year is a leap year";
 else
     cout<<"ur year is not a leap year";
+return 0;
+}
+```
+# make a program that ask for your weight and height and calucalte the BMI (12)
+```
+#include <iostream>
+using namespace std;
+int main(){
+float weight,height,bmi=0;
+cout<<"enter your weight in lb:";
+cin>>weight;
+cout<<"enter your height in inch:";
+cin>>height;
+bmi=weight/(height*height)*703;
+if (bmi>=18.5 && bmi<=25){
+    cout<<"optimal weight    BMI:"<<bmi;
+ }
+ else if (bmi<18.5){
+ cout<<"under weight   BMI:"<<bmi;
+} 
+else 
+ cout<<"over weight   BMI:"<<bmi;
 return 0;
 }
 ```
