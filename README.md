@@ -251,3 +251,36 @@ return 0;
 ```
 # make a loop of natural numbers (13)
 # chat bot (14)
+```
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    //introduction from user
+    string name;
+    cout<<"hi user plzz introduce yourself!!"<<endl;
+     cout<<"lets start with ur name -->:";
+      cin>>name;
+       cout<<"hi "<<name<<endl;
+    // ask for more info
+     cout<<"well "<<name<<" tell me more about yourself"<<endl;
+      cout<<"lets start with your age"<<endl;
+    int age;
+     cout<<"tell me how old are you "<<name<<" :";
+     cin>>age;
+    if (age>=14){
+        cout<<"ohh so your a teenager"<<endl;
+    }
+    else if (age>=20){
+      cout<<"so your a grown adult"<<endl;
+    } else 
+       cout<<"ohh so your a kid"<<endl;
+    // ask for nationality
+    string national;
+     cout<<"well "<<name<<" what's your nationality:";
+      cin>>national;
+        cout<<"good to hear about you indeed "<<national<<" is a great place.";
+      //ask user to play a game
+    
+}
+```
