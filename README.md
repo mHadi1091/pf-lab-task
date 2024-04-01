@@ -280,7 +280,27 @@ int main(){
      cout<<"well "<<name<<" what's your nationality:";
       cin>>national;
         cout<<"good to hear about you indeed "<<national<<" is a great place.";
-      //ask user to play a game
-    
+      //ask the permission to say something in their native language
+      int lang;
+      cout<<"what is ur native language"<<endl;
+      cout<<"1.(urdu)"<<endl;
+      cout<<"2.(punjabi)"<<endl;
+      cout<<"3.(phusto)"<<endl;
+      cout<<"4.(sindhi)"<<endl;
+      cout<<"let me know ur language I wannan say hi"<<endl;
+      cin>>lang;
+      switch (lang){
+          case 1: cout<<"آپ کیسے ہو (urdu)"<<endl;
+          break;
+          case 2: cout<<"تُسی کِدّاں ہو? (punjabi)"<<endl;
+          break;
+          case 3: cout<<"ستاسو څه یاست؟ (phusto)" <<endl;
+          break;
+          case 4: cout<<"توهان ڪيئن آهيو؟ (sindhi)"<<endl;
+          break;
+          default: cout<<"I dont know the language!!"<<endl;
+          break;
+      }
+      
 }
 ```
