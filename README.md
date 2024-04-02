@@ -249,8 +249,44 @@ else
 return 0;
 }
 ```
-# make a loop of natural numbers (13)
-# chat bot (14)
+# make a program based on switches that tells the user days of the week (13)
+```
+#include <iostream>
+using namespace std;
+int main ()
+{
+int day;
+      cout<<"DAYS OF THE WEEK"<<endl;
+      cout<<"1.(sunday)"<<endl;
+      cout<<"2.(monday)"<<endl;
+      cout<<"3.(tuesday)"<<endl;
+      cout<<"4.(wednesday"<<endl;
+      cout<<"5.(thursday)"<<endl;
+      cout<<"6.(friday)"<<endl;
+      cout<<"7.(saturday)"<<endl;
+      cout<<"enter the number of the day"<<endl;
+      cin>>day;
+      switch (day){
+          case 1: cout<<"sunday"<<endl;
+          break;
+          case 2: cout<<"monday"<<endl;
+          break;
+          case 3: cout<<"tuesday"<<endl;
+          break;
+          case 4: cout<<"wednesday"<<endl;
+          break;
+           case 5: cout<<"thursday"<<endl;
+          break;
+           case 6: cout<<"friday"<<endl;
+          break;
+           case 7:cout<<"saturday"<<endl;
+          break;
+          default: cout<<"its not a day!!"<<endl;
+          break;
+}
+}
+```
+# chat bot(14)
 ```
 #include <iostream>
 #include <string>
