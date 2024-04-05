@@ -390,3 +390,27 @@ int main()
     }
 }
 ```
+# Write a C++ program that displays a menu with options for different tasks (1 for task A, 2 for task B, etc.). Based on the user's selection, perform the corresponding task using switch case. (16)
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+    int task;
+    cout<<"following are the tasks"<<endl;
+    cout<<"1. task A"<<endl;
+    cout<<"2. task B"<<endl;
+    cout<<"3. task c"<<endl;
+    cout<<"enter your task serial no:"<<endl;
+    cin>>task;
+    switch (task){
+        case 1: cout<<"TASK A"<<endl;
+        break;
+        case 2: cout<<"TASK B"<<endl;
+        break;
+        case 3: cout<<"TASK C"<<endl;
+        break;
+    }
+    return 0;
+}
+```
