@@ -340,3 +340,53 @@ int main(){
       
 }
 ```
+# make a program that tells the months in a year using switches (15)
+```
+**#include <iostream>
+using namespace std;
+int main()
+{
+    int month;
+    cout<<"MONTHS IN A YEAR"<<endl;
+    cout<<"1.jan"<<endl;
+    cout<<"2.feb"<<endl;
+    cout<<"3.march"<<endl;
+    cout<<"4.april"<<endl;
+    cout<<"5.may"<<endl;
+    cout<<"6.june"<<endl;
+    cout<<"7.july"<<endl;
+    cout<<"8.aug"<<endl;
+    cout<<"9.sep"<<endl;
+    cout<<"10.oct"<<endl;
+    cout<<"11.nov"<<endl;
+    cout<<"12.dec"<<endl;
+    cout<<"enter ur month number"<<endl;
+    cin>>month;
+    switch(month){
+        case 1: cout <<"jan"<<endl;
+        break;
+        case 2: cout <<"feb"<<endl;
+        break;
+        case 3: cout <<"march"<<endl;
+        break;
+        case 4: cout <<"april"<<endl;
+        break;
+        case 5: cout <<"may"<<endl;
+        break;
+        case 6: cout <<"june"<<endl;
+        break;
+        case 7: cout <<"july"<<endl;
+        break;
+        case 8: cout <<"aug"<<endl;
+        break;
+        case 9: cout <<"sep"<<endl;
+        break;
+        case 10: cout <<"oct"<<endl;
+        break;
+        case 11: cout <<"nov"<<endl;
+        break;
+        case 12: cout <<"dec"<<endl;
+        break;
+    }
+}
+```
