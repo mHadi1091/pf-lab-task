@@ -414,3 +414,18 @@ int main()
     return 0;
 }
 ```
+# loops in c++ [for loop] (17)
+```
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int i;
+    cout<<"enter a value>>>:";
+    for (cin >>i;i<=100;i++){
+        cout<<i<<endl;
+    }
+    return 0;
+}
+```
