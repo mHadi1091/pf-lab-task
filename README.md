@@ -429,3 +429,42 @@ int main() {
     return 0;
 }
 ```
+# loops exapmle in c++
+```
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s;
+   
+    cout<<"Press 'y' for Even and 'n' for ODD (y/n) : ";
+
+	cin>> s;
+  
+    for (int i = 0; i < 100; i++) 
+  {
+       if(s == "y" || s == "Y")
+       {
+           	if(i % 2 ==0)
+    cout << i <<"  EVEN "<< "\n";
+       }
+       else if(s == "n" || s == "N")
+       {
+           if(i % 2 !=0)
+    cout << i <<"  ODD "<< "\n";
+       }
+       else
+       {
+       cout<< "Invalid";
+    break;
+           
+       }
+   
+  }
+
+
+
+
+    return 0;
+}
+```
