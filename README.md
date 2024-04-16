@@ -468,3 +468,33 @@ int main()
     return 0;
 }
 ```
+# Write a program that takes an integer input from user and displays hollow rectangle of *
+# according to that number:
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, columns;
+    int i;
+    int j;
+    cout << "Enter the number of rows: ";
+    cin >> rows;
+
+    cout << "Enter the number of columns: ";
+    cin >> columns;
+
+    for( i = 1; i <= rows; i++) {
+        for( j = 1; j <= columns; j++) {
+            if(i == 1 || i == rows || j == 1 || j == columns) {
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
+```
