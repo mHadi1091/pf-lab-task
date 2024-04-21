@@ -390,7 +390,7 @@ int main()
     }
 }
 ```
-# Write a C++ program that displays a menu with options for different tasks (1 for task A, 2 for task B, etc.). Based on the user's selection, perform the corresponding task using switch case. (16)
+# Write a C++ program that displays a menu with options for different tasks (1 for task A, 2 for task B, etc.). Based on the user's selection, perform the corresponding task using switch case (16)
 ```
 #include <iostream>
 using namespace std;
