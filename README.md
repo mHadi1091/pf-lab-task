@@ -439,8 +439,7 @@ int main()
     return 0;
 }
 ```
-# Write a program that takes an integer input from user and displays hollow rectangle of *
-according to that number:(19)
+# Write a program that takes an integer input from user and displays hollow rectangle of * according to that number:(19)
 ```
 #include <iostream>
 using namespace std;
