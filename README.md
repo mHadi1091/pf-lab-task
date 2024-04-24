@@ -110,12 +110,7 @@ if (x>=14){
 
     return 0;
 }
-* OUTUPUT ( if user is a teen >14 )
-- enter your age:15
-- your a teen!
-* OUTPUT ( if user is a child <14 )
-- enter your age:9
-- your a chlid!
+
 ```
 # make a program that takes to values from the user and swap them with eachother (07)
 ```
@@ -134,11 +129,7 @@ y=a;
 cout<<"after swapping; x="<<x<<", y= "<<y<<"\n";
     return 0;
 }
-* OUTPUT
-- enter the value of x:56
-- enter the value of y:22
-- before swappping; x=56, y= 22
-- after swapping; x=22, y= 56
+
 ```
 # swap the values of 2 int by using only 2 variables (08)
 ```
@@ -154,9 +145,7 @@ a=30-10;
 cout<<"after swapping a="<<a<<" ,b="<<b<<"\n";
     return 0;
 }
-* OUTPUT
-- before swapping a=10 ,b=20
-- after swapping a=20 ,b=10
+
 ```
 # calculator (09)
 ```
