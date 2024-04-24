@@ -15,12 +15,7 @@ int main(){
     avg=(x+y+z)/3;
     cout<<"total avg="<<avg;
     return 0;
-}
-* `OUTPUT`
-* `enter value of x=54`
-* `enter value of y=22`
-* `enter value of z=21`
-* `total avg=32`
+  }
 ```
 
  # write a user base program based on arthimatics operations (02)
