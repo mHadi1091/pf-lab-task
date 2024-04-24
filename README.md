@@ -40,14 +40,7 @@ int main(){
     cout<<"division="<<d<<"\n";
     return 0;
 }
-* `OUTPUT`
-* `enter value of x=45`
-* `enter value of y=13`
-* `enter value of z=78`
-* `sum=58`
-* `submission=32`
-* `multiple=585`
-* `division=3`
+
 ```
 
 # write a program that takes the radius of cricle from user and print its area (03)
@@ -62,9 +55,7 @@ int main() {
   cout<<"area of radius="<<area;
     return 0;
 }
-* OUTPUT
-* enter radius=25.3
-* area of radius=2010.9
+
 ```
 # create a program that swaps the value of two variables. take the input of two numbers from the user and then swap their values (04)
 ```
