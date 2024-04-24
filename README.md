@@ -75,11 +75,7 @@ int main() {
     cout << "after swapping: x = " << x << ", y = "<< y;
     return 0;
 }
-* OUTPUT
-* Enter the value of x: 5
-* Enter the value of y: 6
-* Before swapping: x = 5, y = 6
-* after swapping: x = 6, y = 5
+
 ```
 # make a program to convert temperature from celsius to fahrenheit the user should input the temperature in celsius (05)
 ```
