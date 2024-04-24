@@ -400,7 +400,7 @@ int main() {
     return 0;
 }
 ```
-# loops exapmle in c++
+# loops exapmle in c++ (18)
 ```
 #include <iostream>
 using namespace std;
@@ -439,8 +439,8 @@ int main()
     return 0;
 }
 ```
-Write a program that takes an integer input from user and displays hollow rectangle of *
-according to that number:
+# Write a program that takes an integer input from user and displays hollow rectangle of *
+# according to that number:(19)
 ```
 #include <iostream>
 using namespace std;
@@ -470,4 +470,17 @@ int main() {
 }
 
 ```
-# loop based programs 
+# Nested loop based programs (20) 
+```
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 5; j++) {
+            cout << i << " x " << j << " = " << i*j << endl;
+        }
+    }
+    return 0;
+}
+```
