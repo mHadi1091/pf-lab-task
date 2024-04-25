@@ -310,6 +310,7 @@ int main(){
       }
       
 }
+//loops 
 ```
 # make a program that tells the months in a year using switches (15)
 ```
