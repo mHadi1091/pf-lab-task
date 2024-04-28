@@ -1,4 +1,4 @@
- # pf-lab-task 👩‍💻
+q # pf-lab-task 👩‍💻
 prgramming fundamentals lab work &amp; activity
 # make a user based program and print the avg of the given values (01)
 ```
@@ -434,11 +434,8 @@ int main()
    
   }
 
-
-
-
     return 0;
-}
+ }
 ```
 # Write a program that takes an integer input from user and displays hollow rectangle of * according to that number:(19)
 ```
