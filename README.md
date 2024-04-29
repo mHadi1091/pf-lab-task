@@ -258,7 +258,7 @@ int day;
 return 0;
  }
 ```
-# make a program that tells the months in a year using switches (15)
+# make a program that tells the months in a year using switches (14)
 ```
 **#include <iostream>
 using namespace std;
@@ -308,7 +308,7 @@ int main()
     }
 }
 ```
-# Write a C++ program that displays a menu with options for different tasks (1 for task A, 2 for task B, etc.). Based on the user's selection, perform the corresponding task using switch case (16)
+# Write a C++ program that displays a menu with options for different tasks (1 for task A, 2 for task B, etc.). Based on the user's selection, perform the corresponding task using switch case (15)
 ```
 #include <iostream>
 using namespace std;
@@ -332,7 +332,7 @@ int main()
     return 0;
 }
 ```
-# loops in c++ [for loop] (17)
+# loops in c++ [for loop] (16)
 ```
 #include <iostream>
 
@@ -347,7 +347,7 @@ int main() {
     return 0;
 }
 ```
-# loops exapmle in c++ (18)
+# loops exapmle in c++ (17)
 ```
 #include <iostream>
 using namespace std;
@@ -383,7 +383,7 @@ int main()
     return 0;
  }
 ```
-# Write a program that takes an integer input from user and displays hollow rectangle of * according to that number:(19)
+# Write a program that takes an integer input from user and displays hollow rectangle of * according to that number:(18)
 ```
 #include <iostream>
 using namespace std;
@@ -413,7 +413,7 @@ int main() {
 }
 
 ```
-# Nested loop based programs (20) 
+# Nested loop based programs (19) 
 ```
 #include <iostream>
 using namespace std;
@@ -427,7 +427,7 @@ int main() {
     return 0;
 }
 ```
-# make a pattern of diamond (21)
+# make a pattern of diamond (20)
 ```
 #include <iostream>
 using namespace std;
