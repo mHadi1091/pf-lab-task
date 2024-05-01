@@ -1,4 +1,4 @@
-# pf-lab-task 👩‍💻
+# pf-tasks 👩‍💻
 prgramming fundamentals lab work &amp; activity
 # make a user based program and print the avg of the given values (01)
 ```
