@@ -498,6 +498,22 @@ for (int i=0;i<4;i++){
    return 0;
 }
 ```
-# functions
+# functions (24)
 ```
+#include <iostream>
+using namespace std;
+void namecall();  //function declearations 
+int main(){
+    namecall();  //function call
+    
+}
+
+void namecall(){  //function defination
+    string name;
+    cout<<"enter ur name >> ";
+    cin>>name;
+    cout<<name;
+}
 ```
+# overload functions (25)
+
