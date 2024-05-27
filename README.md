@@ -630,21 +630,37 @@ int main() {
 ```
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-const int LEN = 9;
+// Function to print the Sudoku board
+void printBoard(vector<vector<int>>& board) {
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            cout << board[i][j] << " ";
+            if ((j + 1) % 3 == 0 && j < 8) {
+                cout << "| ";
+            }
+        }
+        cout << endl;
+        if ((i + 1) % 3 == 0 && i < 8) {
+            cout << "+-----------------+" << endl;
+        }
+    }
+}
 
-bool is_possible(vector<vector<int>>& board, int row, int col, int num) {
+// Function to check if a number can be placed at a given position
+bool isValid(vector<vector<int>>& board, int row, int col, int num) {
     // Check the row
-    for (int x = 0; x < LEN; x++) {
+    for (int x = 0; x < 9; x++) {
         if (board[row][x] == num) {
             return false;
         }
     }
 
     // Check the column
-    for (int x = 0; x < LEN; x++) {
+    for (int x = 0; x < 9; x++) {
         if (board[x][col] == num) {
             return false;
         }
@@ -663,67 +679,65 @@ bool is_possible(vector<vector<int>>& board, int row, int col, int num) {
     return true;
 }
 
-bool solve(vector<vector<int>>& board, int row, int col) {
-    if (col == LEN) {
-        if (row == LEN - 1) {
-            return true;
-        }
-        col = 0;
-        row++;
-    }
-
-    if (board[row][col] != 0) {
-        return solve(board, row, col + 1);
-    }
-
-    for (int x = 1; x <= LEN; x++) {
-        if (is_possible(board, row, col, x)) {
-            board[row][col] = x;
-            if (solve(board, row, col + 1)) {
-                return true;
+// Function to solve the Sudoku puzzle
+bool solveSudoku(vector<vector<int>>& board) {
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            if (board[i][j] == 0) {
+                for (int num = 1; num <= 9; num++) {
+                    if (isValid(board, i, j, num)) {
+                        board[i][j] = num;
+                        if (solveSudoku(board)) {
+                            return true;
+                        }
+                        board[i][j] = 0;
+                    }
+                }
+                return false;
             }
         }
-        board[row][col] = 0;
     }
-    return false;
+    return true;
 }
-// board design 
-void print_board(const vector<vector<int>>& board) {
-    for (int row = 0; row < LEN; ++row) {
-        for (int col = 0; col < LEN; ++col) {
-            cout << board[row][col] << " ";
-            if ((col + 1) % 3 == 0 && col < LEN - 1) {
-                cout << "| ";
-            }
+
+// Function to play the Sudoku game
+void playSudoku(vector<vector<int>>& board) {
+    int row, col, num;
+    while (true) {
+        printBoard(board);
+        cout << "Enter the row (0-8): ";
+        cin >> row;
+        cout << "Enter the column (0-8): ";
+        cin >> col;
+        cout << "Enter the number (1-9): ";
+        cin >> num;
+        if (isValid(board, row, col, num)) {
+            board[row][col] = num;
+        } else {
+            cout << "Invalid move, try again." << endl;
         }
-        cout << endl;
-        if ((row + 1) % 3 == 0 && row < LEN - 1) {
-            cout << "------+-------+------" << endl;
+        if (solveSudoku(board)) {
+            printBoard(board);
+            cout << "Congratulations, you solved the puzzle!" << endl;
+            break;
         }
     }
 }
 
 int main() {
     vector<vector<int>> board = {
-        {3, 0, 6, 5, 0, 8, 4, 0, 0},
-        {5, 2, 0, 0, 0, 0, 0, 0, 0},
-        {0, 8, 7, 0, 0, 0, 0, 3, 1},
-        {0, 0, 3, 0, 1, 0, 0, 8, 0},
-        {9, 0, 0, 8, 6, 3, 0, 0, 5},
-        {0, 5, 0, 0, 9, 0, 6, 0, 0},
-        {1, 3, 0, 0, 0, 0, 2, 5, 0},
-        {0, 0, 0, 0, 0, 0, 0, 7, 4},
-        {0, 0, 5, 2, 0, 6, 3, 0, 0}
+        {0, 0, 8, 6, 0, 1, 0, 0, 7},
+        {7, 6, 0, 5, 0, 0, 0, 0, 2},
+        {0, 5, 0, 0, 8, 0, 9, 0, 4},
+        {0, 9, 0, 3, 7, 0, 0, 2, 5},
+        {0, 0, 1, 0, 0, 0, 7, 0, 0},
+        {8, 2, 0, 0, 9, 5, 0, 3, 0},
+        {3, 0, 4, 0, 5, 0, 0, 7, 0},
+        {6, 0, 0, 0, 0, 2, 0, 8, 1},
+        {2, 0, 0, 9, 0, 7, 6, 0, 0}
     };
 
-    print_board(board);
-
-    if (solve(board, 0, 0)) {
-        cout << "\nSolved Sudoku Board:\n";
-        print_board(board);
-    } else {
-        cout << "No solution exists" << endl;
-    }
+    playSudoku(board);
 
     return 0;
 }
