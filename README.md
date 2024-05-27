@@ -728,3 +728,30 @@ int main() {
     return 0;
 }
 ```
+# pointers 
+```
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int num=35;
+    int *ptr=&num;
+    int **ptr1=&ptr;
+    
+    cout<<"value of num >> " << num << endl;
+    cout<<"value of ptr >> " << ptr << endl;
+    cout<<"value of prt1 >> " << ptr1 << endl;
+    
+    cout<< "actual memory address of num >> "<< &num << endl;
+    cout<< "actual memory address of ptr >> "<< &ptr << endl;
+    cout<< "actual memory address of ptr1 >> "<< &ptr1 << endl;
+    
+     cout << "memory address of num >> "<< &num<<endl;
+     cout<<"referance memory address of ptr >> "<< &*ptr <<endl;
+     cout<<"referance memory address of ptr1 >> "<< &**ptr1 <<endl;
+     
+     return 0;
+    
+}
+```
